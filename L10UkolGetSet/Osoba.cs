@@ -16,7 +16,21 @@ namespace L10UkolGetSet
             set { prijmeni = value; }
         }
 
-        bool JePlnoleta { get; } = false;
+        bool JePlnoleta
+        {
+            get
+            {
+                return JePlnoleta;
+            }
+            set
+            {
+                if (vek > 18)
+                {
+                    JePlnoleta = true;
+                }
+                else { JePlnoleta = false; }
+            }
+        }
 
         private int vek;
         int Vek
@@ -34,7 +48,7 @@ namespace L10UkolGetSet
                     vek = value;
                     if (value > 18)
                     {
-                        JePlnoleta = true; //toto zatím nefunguje
+                        JePlnoleta = true;
                     }
                 }
             }
