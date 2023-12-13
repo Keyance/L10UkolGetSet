@@ -8,6 +8,13 @@ namespace L10UkolGetSet
 {
     internal class Osoba
     {
+        public override string ToString()
+        {
+            string plnoletost;
+            if (JePlnoleta) { plnoletost = "plnoletý"; } else { plnoletost = "není plnoletý"; }
+            string text = $"{Jmeno} {Prijmeni} - {Vek} - {plnoletost}";
+            return text;
+        }
         private string Jmeno;
         public string jmeno
         {
