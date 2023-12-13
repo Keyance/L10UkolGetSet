@@ -8,7 +8,12 @@ namespace L10UkolGetSet
 {
     internal class Osoba
     {
-        private string Jmeno { get; set; }
+        private string Jmeno;
+        public string jmeno
+        {
+            get { return Jmeno; }
+            set { Jmeno = value; }
+        }
         private string prijmeni;
         public string Prijmeni
         {

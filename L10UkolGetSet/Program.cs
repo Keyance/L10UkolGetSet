@@ -4,3 +4,4 @@ Osoba osoba = new Osoba();
 
 osoba.vek = 24;
 Console.WriteLine(osoba.jePlnoleta);
+osoba.jmeno = "Klára";
