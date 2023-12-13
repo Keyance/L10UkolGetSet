@@ -10,13 +10,15 @@ namespace L10UkolGetSet
     {
         private string Jmeno { get; set; }
         private string prijmeni;
-        private string Prijmeni
+        public string Prijmeni
         {
             get { return prijmeni; }
             set { prijmeni = value; }
         }
 
-        bool JePlnoleta
+
+        private bool JePlnoleta;
+        public bool jePlnoleta
         {
             get
             {
@@ -32,11 +34,11 @@ namespace L10UkolGetSet
             }
         }
 
-        private int vek;
-        int Vek
+        private int Vek;
+        public int vek
         {
             get
-            { return vek; }
+            { return Vek; }
             set
             {
                 if (value  < 0)
@@ -45,7 +47,7 @@ namespace L10UkolGetSet
                 }
                 else    
                 {
-                    vek = value;
+                    Vek = value;
                     if (value > 18)
                     {
                         JePlnoleta = true;
